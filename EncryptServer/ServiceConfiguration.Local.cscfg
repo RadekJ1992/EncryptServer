@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="EncryptServer" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="EncryptWorker">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="radek" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEHw/Bbq92OOJS1K6ieE506owDQYJKoZIhvcNAQEBBQAEggEAVVLSkj8hkymb1apCbVds1negE09AxBe6pYUthOFQ9XROWOCzD8+i5fj0Uzlq0CS7Dji9JfUnUe7ghsIV8jhElhRxCweVWArxzKFHhsfodIMOCjI4tGsvnUTm37OUR3iiUYHE49RkMeJ82dQQncGsfgGdA3vn4SLkF/nKoceM49R4DEx08s5tgO+UsTMEdsAc4xTSdctOZ7T44ScmyeccPHw4GmkGIO2KCYiFox/phJqDNxDZZpHfdqoB0ctdscH2ySjbSUb8/Plp6OMeBX60sGNz9ZkgJa1rMBjSxvi8Ut+uX2FoAkhB28PHJjBcM5VgaHoGzv4OUAHIySm5mQEq5zAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECMxuqXEM2pFIgBA2+JfD5icbupGBRHftVF8S" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-12-29T23:59:59.0000000+01:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="3DF84734A9795E91B74A8CDA0AAA862C63287EF2" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
