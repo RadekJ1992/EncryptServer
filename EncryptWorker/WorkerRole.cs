@@ -93,7 +93,7 @@ namespace EncryptWorker
 
                 // Stwórz strumienie
                 NetworkStream netStream = client.GetStream();
-                StreamReader reader = new StreamReader(netStream);
+                StreamReader reader = new StreamReader(netStream); 
                 StreamWriter writer = new StreamWriter(netStream);
                 writer.AutoFlush = true;
                 //writer.WriteLine("Who are you?");
