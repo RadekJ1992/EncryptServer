@@ -111,6 +111,7 @@ namespace EncryptWorker
                         {
                             LoggerWriter.WriteLine(s);
                         }
+                        loggerList = new List<string>();
                     }
                     while (true)
                     {
